@@ -1,0 +1,23 @@
+{
+  "name": "predux",
+  "version": "0.1.0",
+  "description": "A redux-like interface for streams",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lukeburns/predux.git"
+  },
+  "keywords": [
+    "streams",
+    "redux"
+  ],
+  "author": "Luke Burns",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukeburns/predux/issues"
+  },
+  "dependencies": {
+    "reduxer": "^0.3.0"
+  },
+  "homepage": "https://github.com/lukeburns/predux"
+}
