@@ -3,7 +3,7 @@ predux
 
 [![NPM](https://nodei.co/npm/predux.png)](https://nodei.co/npm/predux/)
 
-predux is an interface for building redux-like streams built using ES6 proxies (works in [Node.js v6.2.1](http://node.green/)).
+predux is an interface for building redux-like streams. It uses [reduxer](https://github.com/lukeburns/reduxer) and ES6 proxies (works in [Node.js v6.2.1](http://node.green/)).
 
 example
 -------
@@ -21,6 +21,7 @@ counter.on('data', function (state) {
 
 counter.increment() // 1
 counter.increment() // 2
+counter.decrement() // 1
 ```
 
 `counter` is a object stream
