@@ -1,12 +1,12 @@
 var predux = require('../')
+var stringify = require('JSONStream').stringify(false)
 
 var counter = predux()
+
 counter.increment = (state=0, num=1) => state+num
 counter.decrement = (state=0, num=1) => state-num
 
-counter.on('increment', function (state, args) {
-  console.log(state, args)
-})
-
 counter.increment()
-counter.increment(2)
+counter.decrement()
+
+counter.pipe(stringify).pipe(process.stdout)

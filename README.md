@@ -15,13 +15,15 @@ var counter = predux()
 counter.increment = (state=0, num=1) => state+num
 counter.decrement = (state=0, num=1) => state-num
 
-counter.on('increment', function (state, num) {
+counter.on('data', function (state) {
   console.log(state)
 })
 
 counter.increment() // 1
 counter.increment() // 2
 ```
+
+`counter` is a object stream
 
 install
 -----
